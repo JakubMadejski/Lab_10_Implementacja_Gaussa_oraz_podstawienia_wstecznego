@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/jakubmadejski/Desktop/programowanie_c_icloud/Lab_10_Implementacja_Gaussa_oraz_podstawienia_wstecznego/Implementacja_podstawienia_wstecznego'
+relocations:     []
+...
