@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
-#define EPSILON 1e-9
+#include "Implementacja_podstawienia_wstecznego.h"
 
 int Wielkosc_macierzy() {
     int n;
