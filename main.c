@@ -18,16 +18,12 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    /* Wczytywanie danych (kolega) */
     wczytywanie_danych(A, b, n);
 
-    /* TWOJA CZĘŚĆ */
     eliminacja_gaussa(A, b, n);
 
-    /* Sprawdzenie poprawności (opcjonalne, ale dobre) */
     sprawdzanie_czy_trojkat(A, n);
 
-    /* CZĘŚĆ KOLEGI */
     podmiana_wsteczna(A, b, x, n);
 
     printf("\n--- Rozwiazanie ukladu ---\n");
