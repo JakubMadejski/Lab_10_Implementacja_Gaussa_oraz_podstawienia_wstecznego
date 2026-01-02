@@ -16,6 +16,7 @@ int Wielkosc_macierzy() {
         }
         return n;
     }
+    return 3;
 }
 
 double** przydzielanie_macierzy(int n) {
@@ -139,31 +140,3 @@ void wczytywanie_danych(double **A, double *b, int n) {
     }
 }
 
-int main() {
-    int n = Wielkosc_macierzy();
-    printf("Rozpoczynam program dla N = %d\n", n);
-
-    double **A = przydzielanie_macierzy(n);
-    double *b = (double*)malloc(n * sizeof(double));
-    double *x = (double*)malloc(n * sizeof(double));
-
-    if (!b || !x) {
-        fprintf(stderr, "Blad alokacji pamieci dla wektorow.\n");
-        exit(EXIT_FAILURE);
-    }
-
-    wczytywanie_danych(A, b, n);
-
-    sprawdzanie_czy_trojkat(A, n);
-
-    podmiana_wsteczna(A, b, x, n);
-
-    printf("\n--- Rozwiazanie ukladu ---\n");
-    for (int i = 0; i < n; i++) {
-        printf("x[%d] = %lf\n", i, x[i]);
-    }
-
-    zwalnianie_pamieci(A, b, x, n);
-
-    return 0;
-}
