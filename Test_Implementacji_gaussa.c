@@ -20,7 +20,7 @@ void wypisz_macierz(double **A, double *b, int n)
 
 int main(void)
 {
-    int n = 3;  // rozmiar testu (zgodny z plikiem)
+    int n = 3;  
 
     double **A = przydzielanie_macierzy(n);
     double *b  = (double *)malloc(n * sizeof(double));
@@ -36,7 +36,6 @@ int main(void)
         return 1;
     }
 
-    // wczytanie macierzy A
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             if (fscanf(f, "%lf", &A[i][j]) != 1) {
@@ -46,7 +45,6 @@ int main(void)
         }
     }
 
-    // wczytanie wektora b
     for (int i = 0; i < n; i++) {
         if (fscanf(f, "%lf", &b[i]) != 1) {
             printf("Blad wczytywania wektora b\n");
@@ -64,7 +62,6 @@ int main(void)
     printf("Macierz PO eliminacji Gaussa:\n");
     wypisz_macierz(A, b, n);
 
-    // sprawdzenie: elementy pod przekątną muszą być ~ 0
     for (int i = 1; i < n; i++) {
         for (int j = 0; j < i; j++) {
             if (fabs(A[i][j]) > EPS) {
