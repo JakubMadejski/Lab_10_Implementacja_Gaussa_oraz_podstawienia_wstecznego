@@ -7,7 +7,7 @@
 int main(void)
 {
     int n = Wielkosc_macierzy();
-    printf("Rozpoczynam program dla N = %d\n", n);
+    printf("START PROGRAMU dla N = %d\n", n);
 
     double **A = przydzielanie_macierzy(n);
     double *b  = (double *)malloc(n * sizeof(double));
