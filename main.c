@@ -7,7 +7,7 @@
 int main(void)
 {
     int n = Wielkosc_macierzy();
-    printf("START PROGRAMU dla N = %d\n", n);
+    printf("Program uruchomiony dla rozmiaru N = %d\n", n);
 
     double **A = przydzielanie_macierzy(n);
     double *b  = (double *)malloc(n * sizeof(double));
@@ -23,10 +23,11 @@ int main(void)
     eliminacja_gaussa(A, b, n);
 
     sprawdzanie_czy_trojkat(A, n);
-
     podmiana_wsteczna(A, b, x, n);
 
     printf("\n--- Rozwiazanie ukladu ---\n");
+
+    
     for (int i = 0; i < n; i++) {
         printf("x[%d] = %lf\n", i, x[i]);
     }
