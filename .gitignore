@@ -1,0 +1,8 @@
+# pliki binarne
+*.exe
+*.o
+a.out
+
+
+# inne śmieci
+*.log
