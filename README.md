@@ -54,13 +54,4 @@ Po uruchomieniu program wypisze (lub zapisze) rozwiązanie układu równań oraz
 - Sprawdź obsługę przypadków osobliwych (macierz osobliwa, dzielenie przez zero).
 - Możesz rozszerzyć program o pivoting (potrójne wybieranie największego elementu) aby zwiększyć stabilność numeryczną.
 
-## 🎯 Co dalej — propozycje ulepszeń
-- Dodać pivoting i porównać błędy numeryczne.
-- Dodać opcję zapisu wyników do pliku CSV.
-- Dodać skrypt testów automatycznych (np. `run_tests.sh`).
 
-## 🤝 Wkład i kontakt
-Jeśli chcesz wprowadzić zmiany — forkuj repo, utwórz gałąź i wyślij pull request. W pliku `README.md` możesz dodać informacje kontaktowe lub autora.
-
----
-_Utworzono automatycznie — jeśli chcesz inną stylistykę (więcej grafik, SVG, gotowe badge z CI), napisz jakie elementy dodać._
