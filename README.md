@@ -1,13 +1,12 @@
 
 # 🧮 Implementacja Eliminacji Gaussa i Podstawienia Wstecznego
 
-![C](https://img.shields.io/badge/language-C-00599C?style=flat-square&logo=c)&nbsp;![License](https://img.shields.io/badge/license-Unspecified-lightgrey?style=flat-square)&nbsp;![Status](https://img.shields.io/badge/status-Completed-brightgreen?style=flat-square)
+![C](https://img.shields.io/badge/language-C-00599C?style=flat-square&logo=c)&nbsp;![License](https://img.shields.io/badge/license-MIT-yellow?style=flat-square)&nbsp;![Status](https://img.shields.io/badge/status-Completed-brightgreen?style=flat-square)
 
 <p align="center">
 	<img src="assets/logo.svg" alt="Gauss logo" width="720"/>
 </p>
 
-Kolorowe, czytelne i praktyczne README projektu implementującego eliminację Gaussa oraz podstawienie wsteczne w C.
 
 ## ✨ Szybkie spojrzenie
 - **Cel:** Rozwiązanie układów równań liniowych metodą eliminacji Gaussa + podstawienia wstecznego.
@@ -53,5 +52,10 @@ Po uruchomieniu program wypisze (lub zapisze) rozwiązanie układu równań oraz
 ## 📝 Uwagi implementacyjne
 - Sprawdź obsługę przypadków osobliwych (macierz osobliwa, dzielenie przez zero).
 - Możesz rozszerzyć program o pivoting (potrójne wybieranie największego elementu) aby zwiększyć stabilność numeryczną.
+
+
+
+## 📜 Licencja
+Projekt jest udostępniony na warunkach licencji MIT — zobacz plik `LICENSE`.
 
 
